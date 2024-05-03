@@ -1,6 +1,7 @@
 import { Footer, Navbar } from "../components/index";
 import DocumentImg from "../assets/PNG/documents.png";
 import { NavLink } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
           Seamlessly Manage your Accounts Today!
         </h5>
 
-        <div className="flex gap-2 mt-3">
+        <div className="flex gap-4 mt-3">
           <NavLink
             to="/login"
             className="text-gray-700 bg-gray-50 border-2 border-slate-300  py-2 px-8 rounded-lg"
@@ -24,9 +25,10 @@ const Home = () => {
           </NavLink>
           <NavLink
             to="/create-account"
-            className="text-white bg-gray-700 py-2 px-8 rounded-lg"
+            className="text-white bg-gray-700 py-2 px-8 rounded-lg text-primary"
           >
             Get Started
+            
           </NavLink>
         </div>
         <div>
