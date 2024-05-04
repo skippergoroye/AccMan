@@ -1,7 +1,6 @@
 import { Footer, Navbar } from "../components/index";
 import DocumentImg from "../assets/PNG/documents.png";
 import { NavLink } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (

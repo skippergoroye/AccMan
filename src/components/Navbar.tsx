@@ -47,7 +47,7 @@ const Navbar = () => {
           </li>
           <li className="">
             <NavLink to="/create-account">
-              <Button className="hover:bg-violet-900 text-white">
+              <Button className="hover:bg-violet-900 text-white bg-violet-500">
                 Create Account
               </Button>
             </NavLink>
