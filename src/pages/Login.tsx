@@ -90,7 +90,7 @@ const Login = () => {
                   <FormControl>
                     <Input
                       placeholder="Enter Password"
-                      className="border-neutral-300"
+                      className="border-neutral-300 focus:outline-none focus-visible:ring-0"
                       // type={showPassword ? "text" : "password"}
                       {...field}
                       // rightIcon={
