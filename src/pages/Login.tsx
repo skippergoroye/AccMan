@@ -5,7 +5,7 @@ import { OnBoardingLayout } from "@/Layout";
 import LadyImg from "../assets/PNG/Lady.png";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -21,7 +21,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Eye, EyeOff } from "lucide-react";
+// import { Eye, EyeOff } from "lucide-react";
 
 const formSchema = z.object({
   email: z.string().email("Enter a valid email address.").min(1, {
@@ -31,7 +31,7 @@ const formSchema = z.object({
 });
 
 const Login = () => {
-  const [showPassword, setShowPassword] = useState<boolean>(false);
+  // const [showPassword, setShowPassword] = useState<boolean>(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -91,21 +91,21 @@ const Login = () => {
                     <Input
                       placeholder="Enter Password"
                       className="border-neutral-300"
-                      type={showPassword ? "text" : "password"}
+                      // type={showPassword ? "text" : "password"}
                       {...field}
-                      rightIcon={
-                        showPassword ? (
-                          <Eye
-                            className="cursor-pointer"
-                            onClick={() => setShowPassword(!showPassword)}
-                          />
-                        ) : (
-                          <EyeOff
-                            className="cursor-pointer"
-                            onClick={() => setShowPassword(!showPassword)}
-                          />
-                        )
-                      }
+                      // rightIcon={
+                      //   showPassword ? (
+                      //     <Eye
+                      //       className="cursor-pointer"
+                      //       onClick={() => setShowPassword(!showPassword)}
+                      //     />
+                      //   ) : (
+                      //     <EyeOff
+                      //       className="cursor-pointer"
+                      //       onClick={() => setShowPassword(!showPassword)}
+                      //     />
+                      //   )
+                      // }
                     />
                   </FormControl>
                   <FormDescription />
