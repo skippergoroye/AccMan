@@ -8,10 +8,10 @@ const Home = () => {
       <Navbar />
 
       <div className="pt-[120px] text-center flex flex-col items-center justify-center">
-        <h1 className="font-bold text-[62px]">
+        <h1 className="font-bold text-[68px]">
           Unlock <span className="text-violet-300">Efficiency</span>.
         </h1>
-        <h5 className="font-regular text-[32px] text-gray-600">
+        <h5 className="font-regular text-[39px] text-black">
           Seamlessly Manage your Accounts Today!
         </h5>
 
